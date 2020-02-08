@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CS307</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='main.css' rel='stylesheet' />
+  <link href='https://fonts.googleapis.com/css?family=Roboto:500,300,400' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+<div id='main'>
+  <div id='b2t1'>Return to top</div>
+  <div id='fe'>
+  <div id='mh'>
+    <div id='mht'>Topics</div>
+    <div id='mhc'></div>
+  </div>
+  <div id='mm'>
+    <div id='mmt'>Dates</div>
+      <div id='mmic'>
+
+  </div>
+  </div>
+  </div>
+  <div id='imgc'><div id='imgic'></div></div>
+</div>
+<script>let dates=[{"date":"1.10.2018","topics":{"ObjectsInOOP":[1,33]}},{"date":"1.22.2018","topics":{"ObjectsInOOP":[34,40],"OOThinking":[1,7]}},{"date":"1.24.2018","topics":{"OOSEandUnifiedMethod":[1,21]}},{"date":"1.29.2018","topics":{"AgileSWDev":[1,19],"CMMI":[1,14],"OOSEandUnifiedMethod":[1,27]}},{"date":"1.31.2018","topics":{"ProgrammingAssignmentPrep":[1,6]}},{"date":"2.5.2018","topics":{"CMMI":[1,14],"UML":[1,32]}},{"date":"2.7.2018","topics":{"OODesign":[1,17],"OORequirementsAnalysis":[1,21]}},{"date":"2.12.2018","topics":{"BP01_Introduction":[1,2],"BP02_VarsAndOps":[1,11],"BP03_PointersAndReferences":[1,8],"BP04_Functions":[1,18],"BP05_Strings":[1,11],"BP06_Templates":[1,20],"BP07_GOTO":[1,1],"OODesign":[1,29]}},{"date":"2.14.2018","topics":{"BP06_Templates":[1,20],"BP07_GOTO":[1,1]}},{"date":"2.21.2018","topics":{"OOTesting":[1,26],"Prog1HintsMeeting2":[1,8],"Prog1Hints":[1,7]}},{"date":"2.26.2018","topics":{"DP00_Intro":[1,7],"DP01_Strategy":[1,9],"DP02_Observer":[1,7],"DP03_Decorator":[1,7],"DP04_FactoryMethod":[1,9],"DP05_AbstractFactory":[1,8],"DP06_Singleton":[1,6]}},{"date":"2.28.2018","topics":{"DP07_Command":[1,12],"DP08_Adapter":[1,5],"DP09_Facade":[1,6],"DP10_TemplateMethod":[1,5],"DP11_Iterator":[1,6],"DP12_Composite":[1,5],"DP13_State":[1,7],"Prog2Hints":[1,12]}},{"date":"3.5.2018","topics":{"DP14_Proxy":[1,6],"DP15_Bridge":[1,5],"DP16_Builder":[1,5],"DP17_ChainOfResponsibility":[1,4],"DP18_Flyweight":[1,5],"DP19_Interpreter":[1,5],"DP20_Mediator":[1,4],"DP21_Memento":[1,4],"DP22_Prototype":[1,4],"DP23_Visitor":[1,5],"DP99_Summary":[1,1]}},{"date":"3.7.2018","topics":{"Prog1HintsMeeting2":[1,8],"Prog1Hints":[1,7],"Prog2Hints":[1,12]}},{"date":"3.12.2018","topics":{}},{"date":"3.19.2018","topics":{"GUIs00_Intro":[1,8],"GUIs01_MessageBox":[1,5],"GUIs02_SimpleWin":[1,9]}},{"date":"3.21.2018","topics":{"GUIs02_SimpleWin":[1,9],"GUIs03_MFC_Dlg":[1,14]}},{"date":"4.2.2018","topics":{"GUIs04_WinForms":[1,6]}},{"date":"4.4.2018","topics":{"GUIs06_Sketcher":[1,8]}},{"date":"4.9.2018","topics":{"GUIs06_Sketcher":[1,13]}},{"date":"4.11.2018","topics":{"GUIs06_Sketcher":[1,18]}},{"date":"4.16.2018","topics":{"GUIs06_Sketcher":[1,20]}},{"date":"4.23.2018","topics":{"GUIs06_Sketcher":[21,30]}}];let topics={"ObjectsInOOP":{"count":40,"separator":"_"},"OOThinking":{"count":7,"separator":"_"},"OOSEandUnifiedMethod":{"count":27,"separator":"_"},"AgileSWDev":{"count":19,"separator":"_"},"CMMI":{"count":14,"separator":"_"},"ProgrammingAssignmentPrep":{"count":6,"separator":"_"},"BP01_Introduction":{"count":2,"separator":""},"BP02_VarsAndOps":{"count":11,"separator":""},"BP03_PointersAndReferences":{"count":8,"separator":""},"BP04_Functions":{"count":18,"separator":""},"BP05_Strings":{"count":11,"separator":""},"BP06_Templates":{"count":20,"separator":""},"BP07_GOTO":{"count":1,"separator":""},"OODesign":{"count":29,"separator":"_"},"OOTesting":{"count":26,"separator":"_"},"Prog1HintsMeeting2":{"count":8,"separator":"_"},"Prog1Hints":{"count":7,"separator":"_"},"DP00_Intro":{"count":7,"separator":"_"},"DP01_Strategy":{"count":9,"separator":"_"},"DP02_Observer":{"count":7,"separator":"_"},"DP03_Decorator":{"count":7,"separator":"_"},"DP04_FactoryMethod":{"count":9,"separator":"_"},"DP05_AbstractFactory":{"count":8,"separator":"_"},"DP06_Singleton":{"count":6,"separator":"_"},"DP07_Command":{"count":12,"separator":"_"},"DP08_Adapter":{"count":5,"separator":"_"},"DP09_Facade":{"count":6,"separator":"_"},"DP10_TemplateMethod":{"count":5,"separator":"_"},"DP11_Iterator":{"count":6,"separator":"_"},"DP12_Composite":{"count":5,"separator":"_"},"DP13_State":{"count":7,"separator":"_"},"Prog2Hints":{"count":12,"separator":"_"},"UML":{"count":32,"separator":"-"},"OORequirementsAnalysis":{"count":21,"separator":"_"},"GUIs00_Intro":{"count":8,"separator":"_"},"GUIs01_MessageBox":{"count":5,"separator":"_"},"GUIs02_SimpleWin":{"count":9,"separator":"_"},"GUIs03_MFC_Dlg":{"count":14,"separator":"_"},"DP14_Proxy":{"count":6,"separator":"_"},"DP15_Bridge":{"count":5,"separator":"_"},"DP16_Builder":{"count":5,"separator":"_"},"DP17_ChainOfResponsibility":{"count":4,"separator":"_"},"DP18_Flyweight":{"count":5,"separator":"_"},"DP19_Interpreter":{"count":5,"separator":"_"},"DP20_Mediator":{"count":4,"separator":"_"},"DP21_Memento":{"count":4,"separator":"_"},"DP22_Prototype":{"count":4,"separator":"_"},"DP23_Visitor":{"count":5,"separator":"_"},"DP99_Summary":{"count":1,"separator":"_"},"GUIs06_Sketcher":{"count":30,"separator":"_"},"GUIs04_WinForms":{"count":6,"separator":"_"}};</script><script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+<script>$(function(){
+  // Generates Github image URL corresponding to passed in topic and image index
+  function genImageUrl(t,i){
+	if (i<9){
+	  i='0'+String(i+1);
+	}
+	else{
+	  i++;
+	}
+	return 'https://raw.githubusercontent.com/nz8/CS307Reference/master/images/'+t+topics[t]['separator']+i+'.jpg';
+  }
+
+  /*************************/
+  // on load
+  /*************************/
+  
+  // Dynamically generate topic sidebar using topics object
+  for (let i in topics){
+    $('#mhc').append("<div class='mhic'><div class='mhi'>"+i+"</div><div class='mhiq'>"+topics[i]['count']+"</div></div>")
+  }
+  /*$('.mhic').each(function(i){
+    if ((i+1)%2==0){
+      $(this).css({'background-color':'#ffffff'});
+    }
+  })*/
+  
+  // Dynamically generate class day divs using topics and dates objects
+  for (let i=0;i<dates.length;i++){
+    let topicshtml='';
+    for (let j in dates[i].topics){
+      topicshtml+="<div class='mmitc'><div class='mmitt'>"+j+"</div>"+"<div class='mmiti'>"+(dates[i].topics[j][1]-dates[i].topics[j][0]+1)+"</div></div>";
+    }
+    $('#mmic').append("<div class='mmi'> <div class='mmit'>"+dates[i].date+"</div><div class='mmitcc'>"+topicshtml+"</div></div>")
+  }
+  
+  // Build array of date strings, simplifies locating date strings in later functions
+  var datesArr=[];
+  for (let i=0;i<dates.length;i++){
+    datesArr.push(dates[i].date);
+  }
+  let WH=window.innerHeight;
+  $('#b2t1').css({'margin-top':WH-55});
+
+
+  /*************************/
+  // events
+  /*************************/
+  
+  // Handles mouse click events
+  
+  
+  // When a topic is clicked, clear container of class slides, then insert all images
+  // of the topic into this container
+  $('.mhic').click(function(){
+    $('#imgic').empty();
+    let tTopic=$(this).find('.mhi').text().trim();
+    for (let i=0;i<topics[tTopic]['count'];i++){
+	console.log(tTopic);
+      $('#imgic').append("<div class='imgenc'><img class='img' src='"+genImageUrl(tTopic,i)+"' </div>");
+    }
+    $('html,body').animate({
+      scrollTop:$('#imgc').offset().top
+    },200)
+  })
+  // When a class date is clicked, clear container of class slides, then insert all images
+  // covered that day into this container
+  $('.mmit').on('click',function(){
+    $('#imgic').empty();
+    let cTopics=dates[datesArr.indexOf($(this).text())].topics;
+    for (let i in cTopics){
+      for (let j=cTopics[i][0]-1;j<cTopics[i][1];j++){
+        $('#imgic').append("<div class='imgenc'><img class='img' src='"+genImageUrl(i,j)+"'</div>")
+      }
+    }
+    $('html,body').animate({
+      scrollTop:$('#imgc').offset().top
+    },200)
+  })
+  
+  // When a topic within a class date is clicked, clear container of class slides, then insert all images
+  // of the clicked topic covered that day
+  $('.mmitc').on('click',function(){
+    $('#imgic').empty();
+    let cTopict=$(this).find('.mmitt').text();
+    let cTopic=dates[datesArr.indexOf($(this).parent().parent().find('.mmit').text())].topics[cTopict];
+      for (let j=cTopic[0]-1;j<cTopic[1];j++){
+        $('#imgic').append("<div class='imgenc'><img class='img' src='"+genImageUrl(cTopict,j)+"'</div>")
+      }
+    $('html,body').animate({
+      scrollTop:$('#imgc').offset().top
+    },350)
+  })
+  $(document).scroll(function(){
+    if ($(document).scrollTop()>1200){
+      $('#b2t1').css('visibility','visible');
+    }
+    else if($(document).scrollTop()<1000){
+      $('#b2t1').css('visibility','hidden');
+    }
+  })
+
+
+  $('#b2t1').click(function(){
+    $('html,body').animate({
+      scrollTop:$('#fe').offset().top
+    },250)
+  })
+})</script>
+</body>
+</html>
